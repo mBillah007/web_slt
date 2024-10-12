@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load django_bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm" style="background-color: rgb(175, 72, 4);">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: whitesmoke;" href="#">Service Link Tech BD</a>
+    </div>
+  </nav>
+  
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
